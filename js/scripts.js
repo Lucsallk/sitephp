@@ -163,15 +163,18 @@ $( document ).ready(function() {
     
     } else if(btnId == 'Informações da Pré-matrícula-menu') {
       scrollTo = servicesSection;
-       } else if(btnId == 'contato-menu') {
-      scrollTo = contactSection;
-    } else {
+    }
+    else if(btnId == 'contato-menu'){
+      scrollTo = contactSection
+    }
+    else{
       scrollTo = bannerSection;
     }
 
     $([document.documentElement, document.body]).animate({
         scrollTop: $(scrollTo).offset().top - 70
     }, 1500);
+    
   });
 
 });
